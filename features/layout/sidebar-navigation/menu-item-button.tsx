@@ -23,7 +23,9 @@ export function MenuItemButton({
       <Button className={styles.anchor} onClick={onClick}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          className={isCollapsed ? styles.righticon : styles.icon}
+          className={
+            isCollapsed && text === "Collapse" ? styles.righticon : styles.icon
+          }
           src={iconSrc}
           alt={`${text} icon`}
         />{" "}
