@@ -7,7 +7,21 @@ const IssuesPage = () => {
       <header className={styles.header}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/icons/logo-large.svg" alt="Prolog logo" />
-        <a href={Routes.projects}>Dashboard</a>
+        <button className={styles.headerButton}>
+          <a href={Routes.home}>Home</a>
+        </button>
+        <button className={styles.headerButton}>
+          <a href={Routes.products}>Products</a>
+        </button>
+        <button className={styles.headerButton}>
+          <a href={Routes.documentation}>Documentation</a>
+        </button>
+        <button className={styles.headerButton}>
+          <a href={Routes.pricing}>Pricing</a>
+        </button>
+        <button className={styles.dashboardButton}>
+          <a href={Routes.projects}>Open Dashboard </a>
+        </button>
       </header>
       <button
         className={styles.contactButton}
